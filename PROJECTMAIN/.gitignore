@@ -1,9 +1,0 @@
-.DS_Store
-nbproject/private/
-build/
-dist/
-build-impl.xml
-genfiles.properties
-project.properties
-*.log
-*.class
