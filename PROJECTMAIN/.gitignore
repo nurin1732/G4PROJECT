@@ -1,10 +1,8 @@
-# macOS
 .DS_Store
-
-# NetBeans
 nbproject/private/
 build/
 dist/
-
-# Logs
+build-impl.xml
+genfiles.properties
+project.properties
 *.log
