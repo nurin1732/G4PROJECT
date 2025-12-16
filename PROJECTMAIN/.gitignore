@@ -6,3 +6,4 @@ build-impl.xml
 genfiles.properties
 project.properties
 *.log
+*.class
