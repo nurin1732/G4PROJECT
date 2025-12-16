@@ -1,2 +1,10 @@
-/G4PROJECT/nbproject/private/
-/PROJECTMAIN/nbproject/private/
+# macOS
+.DS_Store
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# Logs
+*.log
