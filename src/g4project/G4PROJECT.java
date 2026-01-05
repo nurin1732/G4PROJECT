@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.Scanner;
 
 public class G4PROJECT {
-    
+
     public static class stockManager{
         
         public static void displayStockHeader(){
