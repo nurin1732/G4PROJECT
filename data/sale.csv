@@ -1,0 +1,27 @@
+Date,Time,Outlet,Employee,Customer,Items,Total,Method,Status
+"2026-01-12",12:03,C60,Khairul Ariffin bin Muhammad,Raiden Mei,SW2500-1 x2;SW2400-1 x2;,3268.0,Debit card,Transaction verified
+"2026-01-12",13:15,C60,Khairul Ariffin bin Muhammad,Mori,DW2400-1 x2;SW2400-2 x3;SW2500-4 x1;,4330.0,Debit Card,Transaction verified
+"2026-01-12",15:28,C61,Adam bin Abu,Wilson,DW2300-2 x1;DW2400-1 x1;,998.0,cash,Transaction verified
+"2026-01-12",15:37,C61,Adam bin Abu,Shu,SW2500-4 x1;,825.0,Debit Card,Transaction verified
+"2026-01-12",19:06,C62,Jinu Saja,Gallagher,SW2400-1 x2;SW2500-3 x4;,4958.0,Credit Card,Transaction verified
+"2026-01-12",19:08,C62,Jinu Saja,Misha,SW2500-4 x1;,825.0,Cash,Transaction verified
+"2026-01-12",19:12,C63,Wong Benedict,Cocolia,DW2300-4 x2;,698.0,Credit Card,Transaction verified
+"2026-01-12",19:14,C63,Wong Benedict,Mem,DW2400-2 x1;,599.0,Cash,Transaction verified
+"2026-01-12",19:17,C64,Dhaarane,Zara,DW2300-4 x3;,1047.0,Debit Card,Transaction verified
+"2026-01-12",19:18,C64,Dhaarane,Nick,DW2300-4 x1;,349.0,Cash,Transaction verified
+"2026-01-12",19:19,C64,Dhaarane,Judy,DW2300-4 x1;,349.0,Debit Card,Transaction verified
+"2026-01-12",19:24,C65,Adriana Nur Zahra binti Helmi,Dewi,DW2300-2 x2;,798.0,Debit Card,Transaction verified
+"2026-01-12",19:25,C65,Adriana Nur Zahra binti Helmi,Daniel,SW2400-4 x1;,729.0,Credit Card,Transaction verified
+"2026-01-12",19:29,C66,Kang Rumi,Jade,DW2400-3 x4;SW2500-1 x1;,3121.0,Credit Card,Transaction verified
+"2026-01-12",19:30,C66,Kang Rumi,Ash,SW2400-2 x2;,1538.0,Debit Card,Transaction verified
+"2026-01-12",19:31,C66,Kang Rumi,Frank,DW2400-3 x1;,569.0,Cash,Transaction verified
+"2026-01-12",19:32,C66,Kang Rumi,Maya,SW2500-4 x1;,825.0,Cash,Transaction verified
+"2026-01-12",19:40,C67,Li Xinyi,Lily,SW2400-1 x1;,789.0,Credit Card,Transaction verified
+"2026-01-12",19:41,C67,Li Xinyi,Michael,SW2400-1 x1;,789.0,Credit Card,Transaction verified
+"2026-01-12",19:42,C67,Li Xinyi,Stark,SW2400-2 x4;,3076.0,Debit Card,Transaction verified
+"2026-01-12",19:44,C68,Megan Mei,Atlus,SW2500-4 x2;,1650.0,Credit Card,Transaction verified
+"2026-01-12",19:44,C68,Megan Mei,Akira,DW2300-4 x2;,698.0,Credit Card,Transaction verified
+"2026-01-12",19:45,C68,Megan Mei,Yusuke,SW2500-1 x1;,845.0,Credit Card,Transaction verified
+"2026-01-12",19:46,C68,Megan Mei,Haru,SW2500-4 x4;,3300.0,Debit Card,Transaction verified
+"2026-01-12",19:49,C69,Aminah binti Said,Goro,DW2300-1 x1;,399.0,Cash,Transaction verified
+"2026-01-12",19:49,C69,Aminah binti Said,Futaba,DW2300-1 x3;,1197.0,Credit Card,Transaction verified
