@@ -1,0 +1,11 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:43
+From: HQ
+To: C68
+Handled by: Megan Mei
+Models:
+- SW2500-4 (Quantity: 7)
+Total Quantity: 7
+----------------------------
+

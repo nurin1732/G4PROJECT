@@ -1,0 +1,13 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:11
+From: HQ
+To: C63
+Handled by: Wong Benedict
+Models:
+- DW2300-3 (Quantity: 3)
+- DW2300-4 (Quantity: 10)
+- DW2400-2 (Quantity: 5)
+Total Quantity: 18
+----------------------------
+

@@ -1,0 +1,12 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:28
+From: HQ
+To: C66
+Handled by: Kang Rumi
+Models:
+- DW2400-3 (Quantity: 6)
+- SW2400-2 (Quantity: 3)
+Total Quantity: 9
+----------------------------
+

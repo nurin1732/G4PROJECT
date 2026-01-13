@@ -1,0 +1,23 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:39
+From: HQ
+To: C67
+Handled by: Li Xinyi
+Models:
+- DW2300-1 (Quantity: 3)
+Total Quantity: 3
+----------------------------
+
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:40
+From: HQ
+To: C67
+Handled by: Li Xinyi
+Models:
+- SW2400-1 (Quantity: 6)
+- SW2400-2 (Quantity: 5)
+Total Quantity: 11
+----------------------------
+

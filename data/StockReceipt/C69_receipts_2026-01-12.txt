@@ -1,0 +1,11 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:48
+From: HQ
+To: C69
+Handled by: Aminah binti Said
+Models:
+- DW2300-1 (Quantity: 10)
+Total Quantity: 10
+----------------------------
+

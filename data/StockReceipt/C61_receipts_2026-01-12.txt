@@ -1,0 +1,35 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 15:33
+From: C60
+To: C61
+Handled by: Adam bin Abu
+Models:
+- SW2400-1 (Quantity: 2)
+- SW2500-2 (Quantity: 3)
+Total Quantity: 5
+----------------------------
+
+=== Stock IN ===
+Date: 2026-01-12
+Time: 15:51
+From: HQ
+To: C61
+Handled by: Adam bin Abu
+Models:
+- DW2300-2 (Quantity: 4)
+- SW2400-3 (Quantity: 2)
+Total Quantity: 6
+----------------------------
+
+=== Stock OUT ===
+Date: 2026-01-12
+Time: 15:53
+From: C61
+To: C63
+Handled by: Adam bin Abu
+Models:
+- DW2300-1 (Quantity: 2)
+Total Quantity: 2
+----------------------------
+

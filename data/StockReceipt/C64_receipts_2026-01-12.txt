@@ -1,0 +1,22 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:15
+From: HQ
+To: C64
+Handled by: Dhaarane
+Models:
+- SW2500-2 (Quantity: 4)
+Total Quantity: 4
+----------------------------
+
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:16
+From: C63
+To: C64
+Handled by: Dhaarane
+Models:
+- DW2300-4 (Quantity: 3)
+Total Quantity: 3
+----------------------------
+

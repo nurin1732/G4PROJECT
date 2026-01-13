@@ -1,0 +1,24 @@
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:04
+From: HQ
+To: C62
+Handled by: Jinu Saja
+Models:
+- DW2400-2 (Quantity: 4)
+Total Quantity: 4
+----------------------------
+
+=== Stock IN ===
+Date: 2026-01-12
+Time: 19:05
+From: HQ
+To: C62
+Handled by: Jinu Saja
+Models:
+- SW2400-1 (Quantity: 4)
+- SW2500-3 (Quantity: 4)
+- SW2500-4 (Quantity: 4)
+Total Quantity: 12
+----------------------------
+
