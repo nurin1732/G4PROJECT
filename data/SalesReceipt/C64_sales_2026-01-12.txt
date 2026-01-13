@@ -1,0 +1,33 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:17
+Customer: Zara
+Employee: Dhaarane
+Items:
+- DW2300-4 x3 RM1047.0
+Total: RM1047.0
+Method: Debit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:18
+Customer: Nick
+Employee: Dhaarane
+Items:
+- DW2300-4 x1 RM349.0
+Total: RM349.0
+Method: Cash
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:19
+Customer: Judy
+Employee: Dhaarane
+Items:
+- DW2300-4 x1 RM349.0
+Total: RM349.0
+Method: Debit Card
+----------------------
+

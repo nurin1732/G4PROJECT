@@ -1,0 +1,33 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:40
+Customer: Lily
+Employee: Li Xinyi
+Items:
+- SW2400-1 x1 RM789.0
+Total: RM789.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:41
+Customer: Michael
+Employee: Li Xinyi
+Items:
+- SW2400-1 x1 RM789.0
+Total: RM789.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:42
+Customer: Stark
+Employee: Li Xinyi
+Items:
+- SW2400-2 x4 RM3076.0
+Total: RM3076.0
+Method: Debit Card
+----------------------
+

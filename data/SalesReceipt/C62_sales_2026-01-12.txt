@@ -1,0 +1,23 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:06
+Customer: Gallagher
+Employee: Jinu Saja
+Items:
+- SW2400-1 x2 RM1578.0
+- SW2500-3 x4 RM3380.0
+Total: RM4958.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:08
+Customer: Misha
+Employee: Jinu Saja
+Items:
+- SW2500-4 x1 RM825.0
+Total: RM825.0
+Method: Cash
+----------------------
+

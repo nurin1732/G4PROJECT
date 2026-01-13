@@ -1,0 +1,22 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:12
+Customer: Cocolia
+Employee: Wong Benedict
+Items:
+- DW2300-4 x2 RM698.0
+Total: RM698.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:14
+Customer: Mem
+Employee: Wong Benedict
+Items:
+- DW2400-2 x1 RM599.0
+Total: RM599.0
+Method: Cash
+----------------------
+

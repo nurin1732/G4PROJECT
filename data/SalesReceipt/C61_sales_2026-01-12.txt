@@ -1,0 +1,23 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 15:28
+Customer: Wilson
+Employee: Adam bin Abu
+Items:
+- DW2300-2 x1 RM399.0
+- DW2400-1 x1 RM599.0
+Total: RM998.0
+Method: cash
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 15:37
+Customer: Shu
+Employee: Adam bin Abu
+Items:
+- SW2500-4 x1 RM825.0
+Total: RM825.0
+Method: Debit Card
+----------------------
+

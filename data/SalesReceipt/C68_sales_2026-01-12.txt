@@ -1,0 +1,44 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:44
+Customer: Atlus
+Employee: Megan Mei
+Items:
+- SW2500-4 x2 RM1650.0
+Total: RM1650.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:44
+Customer: Akira
+Employee: Megan Mei
+Items:
+- DW2300-4 x2 RM698.0
+Total: RM698.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:45
+Customer: Yusuke
+Employee: Megan Mei
+Items:
+- SW2500-1 x1 RM845.0
+Total: RM845.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:46
+Customer: Haru
+Employee: Megan Mei
+Items:
+- SW2500-4 x4 RM3300.0
+Total: RM3300.0
+Method: Debit Card
+----------------------
+

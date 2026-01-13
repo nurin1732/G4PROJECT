@@ -1,0 +1,22 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:24
+Customer: Dewi
+Employee: Adriana Nur Zahra binti Helmi
+Items:
+- DW2300-2 x2 RM798.0
+Total: RM798.0
+Method: Debit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:25
+Customer: Daniel
+Employee: Adriana Nur Zahra binti Helmi
+Items:
+- SW2400-4 x1 RM729.0
+Total: RM729.0
+Method: Credit Card
+----------------------
+

@@ -1,0 +1,13 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 13:15
+Customer: Mori
+Employee: Khairul Ariffin bin Muhammad
+Items:
+- DW2400-1 x2 RM1198.0
+- SW2400-2 x3 RM2307.0
+- SW2500-4 x1 RM825.0
+Total: RM4330.0
+Method: Debit Card
+----------------------
+

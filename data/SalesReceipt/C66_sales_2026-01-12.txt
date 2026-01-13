@@ -1,0 +1,45 @@
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:29
+Customer: Jade
+Employee: Kang Rumi
+Items:
+- DW2400-3 x4 RM2276.0
+- SW2500-1 x1 RM845.0
+Total: RM3121.0
+Method: Credit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:30
+Customer: Ash
+Employee: Kang Rumi
+Items:
+- SW2400-2 x2 RM1538.0
+Total: RM1538.0
+Method: Debit Card
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:31
+Customer: Frank
+Employee: Kang Rumi
+Items:
+- DW2400-3 x1 RM569.0
+Total: RM569.0
+Method: Cash
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-12
+Time: 19:32
+Customer: Maya
+Employee: Kang Rumi
+Items:
+- SW2500-4 x1 RM825.0
+Total: RM825.0
+Method: Cash
+----------------------
+
