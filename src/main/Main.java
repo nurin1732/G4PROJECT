@@ -39,6 +39,7 @@ public class Main {
             EditService editSvc = new EditService(stockService,empSvc);
             ReportService reportSvc = new ReportService();
             PerformanceService PerformanceSvc = new PerformanceService();
+            EmailService emailSvc = new EmailService();
 
             while (!logout) {
                 System.out.println("\n=== Main Menu ===");
@@ -110,6 +111,10 @@ public class Main {
                     case "0":  
                         logout = true;
                         System.out.println("Logged out.\n");
+                        if (logged.getRole().equalsIgnoreCase("Manager")) {
+                            double totalSalesToday = reportSvc.getTodayTotalSales(logged, true);
+                            emailSvc.sendDailySalesReport(logged, totalSalesToday);
+                        }
                     break;
                         
                     default:
