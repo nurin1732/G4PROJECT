@@ -25,3 +25,5 @@ Date,Time,Outlet,Employee,Customer,Items,Total,Method,Status
 "2026-01-12",19:46,C68,Megan Mei,Haru,SW2500-4 x4;,3300.0,Debit Card,Transaction verified
 "2026-01-12",19:49,C69,Aminah binti Said,Goro,DW2300-1 x1;,399.0,Cash,Transaction verified
 "2026-01-12",19:49,C69,Aminah binti Said,Futaba,DW2300-1 x3;,1197.0,Credit Card,Transaction verified
+"2026-01-15",09:44,C69,Aminah binti Said,John,DW2300-1 x2;,798.0,Credit Card,Transaction verified
+"2026-01-15",09:46,C69,Aminah binti Said,Jodi,DW2300-1 x2;,798.0,Debit Card,Transaction verified
