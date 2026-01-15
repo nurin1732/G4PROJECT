@@ -159,4 +159,37 @@ public class ReportService {
         return -1;
     }
     
+    
+   public double getTodayTotalSales(Employee emp, boolean allOutlets) {
+
+        String today = LocalDate.now().toString();
+        double totalSales = 0;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(SALES_FILE))) {
+
+            br.readLine(); // skip header
+            String line;
+
+            while ((line = br.readLine()) != null) {
+
+                String[] p = line.split(",", -1);
+                for (int i = 0; i < p.length; i++)
+                    p[i] = p[i].replace("\"", "").trim();
+
+                String date = p[0];
+                String outlet = p[2];
+                double total = Double.parseDouble(p[6]);
+
+                if (!date.equals(today)) continue;
+                if (!allOutlets && !outlet.equals(emp.getOutlet())) continue;
+
+                totalSales += total;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error calculating today's sales.");
+        }
+
+        return totalSales;
+    } 
 }
