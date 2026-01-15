@@ -1,3 +1,4 @@
+package models;
 public class StockCount {
     private String date;
     private String time;
