@@ -51,7 +51,7 @@ public class StockService {
         }
     }
 
-    // Stock count (does NOT edit CSV)
+    // Stock count 
     public void stockCount(Employee emp, Scanner sc) {
         DateTimeFormatter tf = DateTimeFormatter.ofPattern("HH:mm");
         String date = LocalDate.now().toString();
