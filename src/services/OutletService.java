@@ -1,6 +1,6 @@
 package services;
 
-import models.Outlet;
+import units.Outlet;
 import utils.CSVUtils;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class OutletService {
         }
     }
 
-    // Linear search (as required by project)
+    // Linear search 
     public Outlet findByCode(String code) {
         for (Outlet o : outlets) {
             if (o.getCode().equals(code)) {
@@ -36,9 +36,5 @@ public class OutletService {
         return findByCode(code) != null;
     }
 
-    public void displayAllOutlets() {
-        for (Outlet o : outlets) {
-            System.out.println(o.getCode() + " - " + o.getName());
-        }
-    }
+
 }
