@@ -1,7 +1,11 @@
 package services;
 
-import models.Employee;
-import java.io.*;
+import units.Employee;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -20,7 +24,7 @@ public class EmployeeService {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] p = line.split(",", -1);
-                if (p.length < 5) continue;   // safety
+                if (p.length < 5) continue;   
                 employees.add(new Employee(p[0], p[1], p[2], p[3], p[4]));
             }
         } catch (IOException e) {
@@ -37,9 +41,6 @@ public class EmployeeService {
         return null;
     }
 
-    // =========================
-    // REGISTER NEW EMPLOYEE
-    // =========================
     public void registerEmployee(Scanner sc) {
 
         System.out.println("\n=== Register New Employee ===");
@@ -84,7 +85,7 @@ public class EmployeeService {
 
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE, true))) {
 
-            pw.println();  // ✅ THIS FIXES “APPENDING TO THE SIDE”
+            pw.println();  // add a new row to keep data
             pw.print(emp.getId() + ",");
             pw.print(emp.getName() + ",");
             pw.print(emp.getRole() + ",");
@@ -96,9 +97,7 @@ public class EmployeeService {
         }
     }
 
-    // =========================
-    // HELPER   this is to ensure there is no duplication of id 
-    // =========================
+    //this is to ensure there is no duplication of id 
     private boolean employeeExists(String id) {
         for (Employee e : employees) {
             if (e.getId().equalsIgnoreCase(id)) return true;
