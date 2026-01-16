@@ -59,7 +59,7 @@ public class EditService {
             try {
                 newStock = Integer.parseInt(sc.nextLine());
                 if (newStock >= 0) break;
-            } catch (Exception ignored) {}
+            } catch (Exception e) {}
             System.out.println("Invalid number.");
         }
 
