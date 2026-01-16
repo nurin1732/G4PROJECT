@@ -1,7 +1,7 @@
 package services;
 
 import units.Outlet;
-import utils.CSVUtils;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,10 +15,18 @@ public class OutletService {
     }
 
     private void load() {
-        List<String[]> rows = CSVUtils.readAll(FILE);
-        for (int i = 1; i < rows.size(); i++) { // skip header
-            String[] r = rows.get(i);
-            outlets.add(new Outlet(r[0], r[1]));
+        outlets.clear();
+        try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
+            String line;
+            br.readLine(); // skip header
+            while ((line = br.readLine()) != null) {
+                String[] r = line.split(",", -1); // split by comma
+                if (r.length >= 2) {
+                    outlets.add(new Outlet(r[0].trim(), r[1].trim()));
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading outlets file: " + e.getMessage());
         }
     }
 
@@ -35,6 +43,4 @@ public class OutletService {
     public boolean isValidOutlet(String code) {
         return findByCode(code) != null;
     }
-
-
 }
