@@ -1,6 +1,6 @@
 package services;
 
-import models.Employee;
+import units.Employee;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,9 +12,6 @@ public class PerformanceService {
 
     private final String SALES_FILE = "data/sale.csv";
 
-    // -----------------------------
-    // Menu + user input
-    // -----------------------------
     public void viewEmployeePerformance(Employee manager, java.util.Scanner sc) {
 
         System.out.println("\n=== Employee Performance Report ===");
@@ -44,9 +41,6 @@ public class PerformanceService {
         generatePerformanceReport(manager, outletChoice, month);
     }
 
-    // -----------------------------
-    // Core logic
-    // -----------------------------
     private void generatePerformanceReport(Employee manager, int outletChoice, String selectedMonth) {
 
         List<String> employeeNames = new ArrayList<>();
@@ -107,9 +101,7 @@ public class PerformanceService {
             return;
         }
 
-        // -----------------------------
         // Sort by total sales descending
-        // -----------------------------
         for (int i = 0; i < totalSalesList.size() - 1; i++) {
             for (int j = i + 1; j < totalSalesList.size(); j++) {
                 if (totalSalesList.get(j) > totalSalesList.get(i)) {
@@ -136,9 +128,7 @@ public class PerformanceService {
             }
         }
 
-        // -----------------------------
         // Display
-        // -----------------------------
         System.out.printf("\n%-30s %-8s %-12s %-8s\n", "Employee", "Outlet", "Transactions", "Total Sales");
         System.out.println("------------------------------------------------------------");
 
