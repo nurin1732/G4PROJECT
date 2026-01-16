@@ -1,6 +1,9 @@
 package services;
 
-import models.*;
+import units.Sale;
+import units.Employee;
+import units.SaleItem;
+import units.Model;
 import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -171,17 +174,23 @@ public class SalesService {
     LocalDate startDate = null;
     LocalDate endDate = null;
 
-    if (dateChoice == 1) {
-        startDate = endDate = LocalDate.now();
-    } else if (dateChoice == 2) {
-        System.out.print("Enter date (yyyy-MM-dd): ");
-        startDate = endDate = LocalDate.parse(sc.nextLine());
-    } else if (dateChoice == 3) {
-        System.out.print("Start date (yyyy-MM-dd): ");
-        startDate = LocalDate.parse(sc.nextLine());
-        System.out.print("End date (yyyy-MM-dd): ");
-        endDate = LocalDate.parse(sc.nextLine());
-    }
+        switch (dateChoice) {
+            case 1:
+                startDate = endDate = LocalDate.now();
+                break;
+            case 2:
+                System.out.print("Enter date (yyyy-MM-dd): ");
+                startDate = endDate = LocalDate.parse(sc.nextLine());
+                break;
+            case 3:
+                System.out.print("Start date (yyyy-MM-dd): ");
+                startDate = LocalDate.parse(sc.nextLine());
+                System.out.print("End date (yyyy-MM-dd): ");
+                endDate = LocalDate.parse(sc.nextLine());
+                break;
+            default:
+                break;
+        }
 
     // ===== Read & filter file =====
     try (BufferedReader br = new BufferedReader(new FileReader(SALES_FILE))) {
