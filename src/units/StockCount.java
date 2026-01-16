@@ -1,5 +1,8 @@
 package models;
+<<<<<<< HEAD:src/units/StockCount.java
 
+=======
+>>>>>>> ceaa650bd627123c036981b79464e8dc09b4304f:src/models/StockCount.java
 public class StockCount {
     private String date;
     private String time;
