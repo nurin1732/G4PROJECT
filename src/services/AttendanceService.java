@@ -1,12 +1,9 @@
 package services;
 
-import models.Attendance;
-import models.Employee;
-
+import units.Attendance;
+import units.Employee;
 import java.io.*;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Duration;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
@@ -32,7 +29,7 @@ public class AttendanceService {
                 ));
             }
         } catch (IOException e) {
-            // file may not exist yet
+            System.out.println("Error finding attendance.csv");
         }
     }
 
