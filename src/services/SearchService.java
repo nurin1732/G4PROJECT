@@ -1,6 +1,7 @@
 package services;
 
-import models.*;
+import units.Model;
+import units.Employee;
 import java.io.*;
 import java.util.*;
 
@@ -8,7 +9,6 @@ public class SearchService {
 
     private final StockService stockService;
     private final String SALES_FILE = "data/sale.csv";
-    private final String EMPLOYEE_FILE = "data/employees.csv";
 
     public SearchService(StockService stockService) {
         this.stockService = stockService;
@@ -28,9 +28,7 @@ public class SearchService {
         }
     }
 
-    // =======================
     // STOCK INFORMATION
-    // =======================
     private void searchStock(Scanner sc) {
         System.out.println("\n=== Search Stock Information ===");
         System.out.print("Search Model Name: ");
@@ -59,9 +57,7 @@ public class SearchService {
         if (!found) System.out.println("No model found matching '" + query + "'.");
     }
 
-    // =======================
     // SALES INFORMATION
-    // =======================
     private void searchSales(Employee emp,Scanner sc) {
         System.out.println("\n=== Search Sales Information ===");
         System.out.println("Search by:");
