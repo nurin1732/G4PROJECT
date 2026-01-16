@@ -1,6 +1,6 @@
 package services;
 
-import models.Employee;
+import units.Employee;
 import java.io.*;
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -47,9 +47,7 @@ public class ReportService {
         }
     }
 
-    // =============================
     // CORE REPORT LOGIC
-    // =============================
     private void generateReport(Employee emp, String mode, boolean allOutlets) {
 
         String today = LocalDate.now().toString();
@@ -116,9 +114,7 @@ public class ReportService {
             return;
         }
 
-        // =============================
         // OUTPUT
-        // =============================
         System.out.println("\n----------------------------");
         System.out.println("Total Sales: RM" + totalSales);
 
@@ -149,9 +145,7 @@ public class ReportService {
         System.out.println("----------------------------");
     }
 
-    // =============================
     // HELPER
-    // =============================
     private int findModelIndex(String[] models, int count, String model) {
         for (int i = 0; i < count; i++) {
             if (models[i].equals(model)) return i;
