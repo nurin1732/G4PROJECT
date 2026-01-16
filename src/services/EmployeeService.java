@@ -78,9 +78,6 @@ public class EmployeeService {
         System.out.println("Employee registered successfully.");
     }
 
-    // =========================
-    // SAVE TO CSV (FIXED)
-    // =========================
     private void saveEmployee(Employee emp) {
 
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE, true))) {
