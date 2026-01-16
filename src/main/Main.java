@@ -32,6 +32,7 @@ public class Main {
 
             boolean logout = false;
             
+            AttendanceService attSvc = new AttendanceService();
             StockService stockSvc = new StockService();
             SalesService salesSvc = new SalesService(stockSvc);
             EditService editSvc = new EditService(stockSvc,empSvc);
@@ -58,7 +59,6 @@ public class Main {
 
                 switch (choice) {
                     case "1":
-                        AttendanceService attSvc = new AttendanceService();
                         attSvc.clock(loggedIn);
                         break;
                         
