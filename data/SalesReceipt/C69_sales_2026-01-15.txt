@@ -1,0 +1,22 @@
+=== Sale Receipt ===
+Date: 2026-01-15
+Time: 09:44
+Customer: John
+Employee: Aminah binti Said
+Items:
+- DW2300-1 x2 RM798.0
+Total: RM798.0
+Method: Credit
+----------------------
+
+=== Sale Receipt ===
+Date: 2026-01-15
+Time: 09:46
+Customer: Jodi
+Employee: Aminah binti Said
+Items:
+- DW2300-1 x2 RM798.0
+Total: RM798.0
+Method: Debit Card
+----------------------
+
