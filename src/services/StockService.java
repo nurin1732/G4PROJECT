@@ -1,7 +1,7 @@
 package services;
 
-import models.Model;
-import models.Employee;
+import units.Model;
+import units.Employee;
 import java.io.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -11,7 +11,7 @@ public class StockService {
 
     private final String MODEL_FILE = "data/models.csv";
     private ArrayList<Model> models = new ArrayList<>();
-    private OutletService outletSvc; // single instance for all outlet checks
+    private OutletService outletSvc; 
 
     public StockService() {
         outletSvc = new OutletService(); // load outlets once
@@ -81,7 +81,7 @@ public class StockService {
                 try {
                     counted = Integer.parseInt(sc.nextLine());
                     if (counted >= 0) break;
-                } catch (Exception ignored) {}
+                } catch (Exception e) {}
                 System.out.println("Invalid number.");
             }
 
@@ -131,9 +131,7 @@ public class StockService {
 
         OutletService outletSvc = new OutletService();
 
-    // =========================
     // Determine FROM / TO outlet
-    // =========================
         if (type.equalsIgnoreCase("In")) {
 
             System.out.println("Is this stock coming from HQ or another outlet?");
@@ -171,9 +169,7 @@ public class StockService {
             }
         }
 
-    // =========================
     // Enter models
-    // =========================
         ArrayList<String> modelNames = new ArrayList<>();
         ArrayList<Integer> quantities = new ArrayList<>();
         int totalQty = 0;
@@ -201,7 +197,7 @@ public class StockService {
                 try {
                     qty = Integer.parseInt(sc.nextLine());
                     if (qty > 0) break;
-                } catch (Exception ignored) {}
+                } catch (Exception e) {}
                 System.out.println("Invalid quantity.");
             }
 
@@ -212,9 +208,7 @@ public class StockService {
                 sourceIndex = Integer.parseInt(fromOutlet.substring(1)) - 60;
             }
 
-        // =========================
         // STOCK LOGIC
-        // =========================
             if (type.equalsIgnoreCase("In")) {
 
                 if (fromOutlet.equals("HQ")) {
@@ -256,9 +250,7 @@ public class StockService {
         saveModels();
         loadModels();
 
-    // =========================
     // Receipt
-    // =========================
         try {
             File folder = new File("data/StockReceipt");
             if (!folder.exists()) folder.mkdirs();
