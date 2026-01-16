@@ -1,8 +1,7 @@
 package main;
 
 import services.*;
-import models.Employee;
-
+import units.Employee;
 import java.util.Scanner;
 
 public class Main {
@@ -13,30 +12,29 @@ public class Main {
         EmployeeService empSvc = new EmployeeService();
 
         while (true) {
-            System.out.println("=== Employee Login ===");
+            
+            System.out.println("====== Employee Login ======");
             System.out.print("Enter User ID: ");
             String id = sc.nextLine().trim();
 
             System.out.print("Enter Password: ");
             String pass = sc.nextLine().trim();
 
-            Employee logged = empSvc.login(id, pass);
+            Employee loggedIn = empSvc.login(id, pass);
 
-            if (logged == null) {
-                System.out.println("Login Failed: Invalid User ID or Password.\n");
+            if (loggedIn == null) {
+                System.out.println("Login failed : Invalid User ID or Password\n");
                 continue;
             }
 
             System.out.println("\nLogin Successful!");
-            System.out.println("Welcome, " + logged.getName() +
-                    " (" + logged.getId() + ")");
+            System.out.println("Welcome, " + loggedIn.getName() + " (" + loggedIn.getOutlet() + ")");
 
             boolean logout = false;
             
-            StockService stockService = new StockService();
-            SalesService salesService = new SalesService(stockService);
-            SearchService searchService = new SearchService(stockService);
-            EditService editSvc = new EditService(stockService,empSvc);
+            StockService stockSvc = new StockService();
+            SalesService salesSvc = new SalesService(stockSvc);
+            EditService editSvc = new EditService(stockSvc,empSvc);
             ReportService reportSvc = new ReportService();
             PerformanceService PerformanceSvc = new PerformanceService();
             EmailService emailSvc = new EmailService();
@@ -61,39 +59,39 @@ public class Main {
                 switch (choice) {
                     case "1":
                         AttendanceService attSvc = new AttendanceService();
-                        attSvc.clock(logged);
+                        attSvc.clock(loggedIn);
                         break;
                         
                     case "2":
-                        new StockService().stockCount(logged, sc);
+                        new StockService().stockCount(loggedIn, sc);
                         break;
                         
                     case "3":
-                        stockService.stockInOut(logged, sc);
+                        stockSvc.stockInOut(loggedIn, sc);
                         break;
                         
                     case "4":
-                        salesService.recordSale(logged, sc);
+                        salesSvc.recordSale(loggedIn, sc);
                         break;
                         
                     case "5":
-                        new SalesService(stockService).viewSalesHistory(logged, sc);
+                        new SalesService(stockSvc).viewSalesHistory(loggedIn, sc);
                         break;
                         
                     case "6":
-                        new SearchService(stockService).search(logged, sc); 
+                        new SearchService(stockSvc).search(loggedIn, sc); 
                         break;
                         
                     case "7":
-                        editSvc.editInformation(logged, sc);
+                        editSvc.editInformation(loggedIn, sc);
                         break;
                         
                     case "8": 
-                        reportSvc.viewSalesReport(logged, sc);
+                        reportSvc.viewSalesReport(loggedIn, sc);
                         break;
 
                     case "9":
-                        if (!logged.getRole().equalsIgnoreCase("Manager")) {
+                        if (!loggedIn.getRole().equalsIgnoreCase("Manager")) {
                             System.out.println("Only manager can register new employees.");
                         } else {
                             empSvc.registerEmployee(sc);
@@ -101,26 +99,36 @@ public class Main {
                         break;
                         
                     case "10":
-                        if (!logged.getRole().equalsIgnoreCase("Manager")) {
+                        if (!loggedIn.getRole().equalsIgnoreCase("Manager")) {
                             System.out.println("Only manager can view employee performance.");
                             return;
                         } 
-                        PerformanceSvc.viewEmployeePerformance(logged, sc);
+                        PerformanceSvc.viewEmployeePerformance(loggedIn, sc);
                         break;
 
                     case "0":  
-                        logout = true;
-                        System.out.println("Logged out.\n");
-                        if (logged.getRole().equalsIgnoreCase("Manager")) {
-                            double totalSalesToday = reportSvc.getTodayTotalSales(logged, true);
-                            emailSvc.sendDailySalesReport(logged, totalSalesToday);
+                        System.out.println("Are you sure you want to log out? (Y/N)");
+                        String confirm = sc.nextLine().trim();
+                        
+                        if(confirm.equalsIgnoreCase("Y")){
+                            logout = true;
+                                if (loggedIn.getRole().equalsIgnoreCase("Manager")) {
+                                    double totalSalesToday = reportSvc.getTodayTotalSales(loggedIn, true);
+                                    emailSvc.sendDailySalesReport(loggedIn, totalSalesToday);
+                                }
+                            System.out.println("Logged out.\n");
+                        }else{
+                            System.out.println("Log out cancelled.");
                         }
-                    break;
+                        break;
                         
                     default:
                         System.out.println("Invalid option. Please try again.");
                 }
             }
+                        
+                    
+            
         }
     }
 }
