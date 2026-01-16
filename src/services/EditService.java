@@ -1,6 +1,7 @@
 package services;
 
-import models.*;
+import units.Employee;
+import units.Model;
 import java.io.*;
 import java.util.*;
 
@@ -15,9 +16,7 @@ public class EditService {
         this.empService = empService;
     }
     
-    // ========================
     // WRAPPER: Edit Information
-    // ========================
     public void editInformation(Employee emp, Scanner sc) {
         System.out.println("\n=== Edit Menu ===");
         System.out.println("1. Edit Stock Information");
@@ -37,9 +36,7 @@ public class EditService {
         }
     }
 
-    // ========================
     // EDIT STOCK
-    // ========================
     public void editStock(Employee emp, Scanner sc) {
         System.out.println("\n=== Edit Stock Information ===");
         System.out.print("Enter Model Name: ");
@@ -77,9 +74,7 @@ public class EditService {
         }
     }
 
-    // ========================
     // EDIT SALES
-    // ========================
     public void editSales(Employee emp, Scanner sc) {
         System.out.println("\n=== Edit Sales Information ===");
         System.out.print("Enter Transaction Date (yyyy-MM-dd): ");
@@ -165,7 +160,7 @@ public class EditService {
             return;
         }
 
-        // Save updated CSV (only quote date)
+        // Save updated CSV 
         try (PrintWriter pw = new PrintWriter(new FileWriter(SALES_FILE))) {
             pw.println("Date,Time,Outlet,Employee,Customer,Items,Total,Method,Status");
             for (String[] record : salesData) {
